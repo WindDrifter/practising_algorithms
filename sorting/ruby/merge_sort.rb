@@ -1,3 +1,5 @@
+## Note: Ruby arrays are pass by reference instead of pass by value.
+
 def merge_sort(arr)
   return merge_sort_f(arr,0,arr.count-1)
 end
@@ -38,5 +40,6 @@ def merge_sort_f(arr,start,fin)
 end
 arr = [5,10,2,4,6]
 print arr
+puts ""
 merge_sort(arr)
 print arr
